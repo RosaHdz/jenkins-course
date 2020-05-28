@@ -20,7 +20,7 @@ node {
         }
         stage('Exec Gradle') {
             env.GRADLE_USER_HOME='/tmp'
-            sh "./gradlew artifactoryPublish"
+            sh "./initial/gradlew artifactoryPublish"
             //rtGradle.run rootDir: "artifactory/", buildFile: 'build.gradle', tasks: 'clean artifactoryPublish', buildInfo: buildInfo
            
         }
